@@ -1,0 +1,94 @@
+/*Para hacer responsiva una página web
+debemos checar a partir de que tamaño nos gustaría 
+que cambiaran las cosas. Podemos ayudarnos de abrir en una pestaña
+aparte el DevTools y esto hará que la página web ponga sus dimensiones
+en la esquina superior derecha*/
+
+@media (max-width: 956px){
+    .layout{
+        grid-template-areas: 
+            "header header"
+            "slider slider"
+            "main main"
+            "aside aside"
+        ;
+        grid-template-columns: 100%;
+    }
+
+    .layout__articles{
+        margin-right: 0;
+    }
+
+    .layout__aside{
+        margin-top: 4rem;
+    }
+
+    .header__container-img{
+        width: 100%;
+    }
+
+    .header__img{
+        width: 100%;
+    }
+
+    .login__form-group,
+    .login__submit{
+        width: 65%;
+    }
+}
+
+@media (max-width: 696px){
+    .header__nav{
+        height: auto;
+        padding: 2rem;
+    }
+
+    .nav__list{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .layout__slider{
+        height: 30rem;
+        
+    }
+}
+
+@media (max-width: 500px){
+    .logo__text{
+        font-size: 3.5rem;
+    }
+
+    .layout__slider{
+        height: 22rem;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .login__form-group,
+    .login__submit{
+        width: 100%;
+    }
+}
+
+/*También se puede usar device emulation en 
+DevTools para tener un comportamiento más fiel al de un 
+dispositivo móvil*/
+
+@media (max-width: 400px){
+    .logo__text{
+        font-size: 2.5rem;
+    }
+
+    .layout__slider{
+        height: 16rem;
+    }
+
+    .footer{
+        font-size: 1.4rem;
+    }
+}
