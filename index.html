@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/slider.js" defer></script>
+    <script src="./assets/js/articles.js" defer></script>
+    <script src="./assets/js/login.js" defer></script>
+    <script src="./assets/js/themes.js" defer></script>
+    
+    <title>Proyecto JavaScript</title>
+</head>
+<body>
+
+    <div class="layout">
+        <header class="layout__header">
+            <div class="header__logo">
+                <h1 class="logo__text">Proyecto JavaScript</h1>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="list__item">
+                        <a href="index.html" class="list__link">INICIO</a>
+                    </li>
+
+                    <li class="list__item">
+                        <a href="reloj.html" class="list__link">RELOJ</a>
+                    </li>
+
+                    <li class="list__item">
+                        <a href="sobre-mi.html" class="list__link">SOBRE MÍ</a>
+                    </li>
+
+                    <li class="list__item">
+                        <a href="contacto.html" class="list__link">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="layout__slider">
+            <button class="slider__btn-prev">
+                <i class="slider__icon fa-solid fa-caret-left"></i>
+            </button>
+
+            <div class="slider__slides">
+                <article class="slides__item slides__item--active">
+                    <img class="slides__img" src="./assets/img/hojas.jpg" alt="hojas" />
+                </article>
+
+                <article class="slides__item slides__item">
+                    <img class="slides__img" src="./assets/img/cielo.jpg" alt="cielo" />
+                </article>
+
+                <article class="slides__item slides__item">
+                    <img class="slides__img" src="./assets/img/rojo.jpg" alt="rojo" />
+                </article>
+            </div>
+
+            <button class="slider__btn-next">
+                <i class="slider__icon fa-solid fa-caret-right"></i>
+            </button>
+        </section>
+
+        <main class="layout__articles">
+
+            <!--Aquí van los artículos-->
+
+        </main>
+
+        <aside class="layout__aside">
+            <header class="aside__header">
+                <div class="header__container-title">
+                    <h3 class="header__title">
+                        <span class="title__span">¿Quién soy?</span>
+                    </h3>
+                </div>
+
+                <div class="header__container-img">
+                    <img class="header__img" src="./assets/img/caracol.jpg" />
+                </div>
+
+                <p class="header__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores, hic cum, praesentium dolore obcaecati tenetur, rerum eveniet maiores ratione laborum delectus ex repellat accusantium officiis? Totam tempore sequi fugit.
+                </p>
+            </header>
+
+            <form class="aside__login">
+                <div class="login__container-title">
+                    <h3 class="login__title">
+                        <span class="title__span">Identifícate</span>
+                    </h3>
+                </div>
+
+                <div class="login__form-group">
+                    <label class="login__label" for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" class="login__input" required/>
+                </div>
+
+                <div class="login__form-group">
+                    <label class="login__label" for="email">Email:</label>
+                    <input type="text" id="email" name="email" class="login__input" required/>
+                </div>
+
+                <div class="login__form-group">
+                    <label class="login__label" for="pass">Contraseña:</label>
+                    <input type="password" id="pass" name="pass" class="login__input" required/>
+                </div>
+
+                <input type="submit" value="Entrar" class="login__submit" />
+            </form>
+
+            <div class="aside__data aside__data--hide">
+                <p class="data__text">
+                    Bienvenido, <span class="data__name"></span>
+                </p>
+                <button class="data__logout">Cerrar sesión</button>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p class="footer__text">Todos los derechos reservados &copy; Steph Llamas</p>
+        <p class="footer__top">Ir arriba</p>
+    </footer>
+
+    <div class="themes">
+        <div class="theme__green"></div>
+        <div class="theme__red"></div>
+        <div class="theme__blue"></div>
+    </div>
+
+</body>
+</html>
